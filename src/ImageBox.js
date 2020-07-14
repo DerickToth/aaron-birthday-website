@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { thisExpression } from '@babel/types';
 
 export class ImageBox extends React.Component {
     constructor() {
@@ -10,21 +11,21 @@ export class ImageBox extends React.Component {
       }
     }
 
-    open = (e) => {
+    toggle = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        console.log("open");
+        this.setState({
+            open: this.state.open ? false : true
+        })    
     }
   
     render() {
       return (
-        <div className="image-box">
-            <img 
-                className="image" 
-                src={this.props.imageSrc} 
-                alt={this.props.description}
-                onClick={this.open}
-            />
+        <div className="item-box" onClick={this.toggle}>
+            {this.state.open ? 
+                <img className="cover" src={this.props.content} alt={"content"}/> :
+                <img className="content" src={this.props.cover} alt={"cover image"}/>
+            }
         </div>
       );
     }
