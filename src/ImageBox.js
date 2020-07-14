@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import { thisExpression } from '@babel/types';
 
 export class ImageBox extends React.Component {
     constructor() {
       super()
 
       this.state = {
-        open: false,
+        open: false
       }
     }
 
@@ -18,14 +17,19 @@ export class ImageBox extends React.Component {
             open: this.state.open ? false : true
         })    
     }
+
+    getCover = () => {
+        return <img className="cover" src={this.props.cover} alt={"cover"}/>
+    }
+
+    getContent = () => {
+        return <img className="content" src={this.props.content} alt={"content"}/>
+    }
   
     render() {
       return (
         <div className="item-box" onClick={this.toggle}>
-            {this.state.open ? 
-                <img className="cover" src={this.props.content} alt={"content"}/> :
-                <img className="content" src={this.props.cover} alt={"cover image"}/>
-            }
+            {this.state.open ? this.getContent() : this.getCover()}
         </div>
       );
     }

@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>IT'S AARON DAY!!!</p>
+          <p>AARON DAY!</p>
         </header>
         <ImageCollection/>
       </div>
