@@ -13,7 +13,6 @@ export class Card extends React.Component {
     flip = (e) => {
         e.preventDefault();
         e.stopPropagation();
-        console.log("flip")
         this.setState({
             flipped: this.state.flipped ? false : true
         })    
@@ -24,10 +23,10 @@ export class Card extends React.Component {
         <div className="card-wrapper" onClick={this.flip}>
           <div className={`card${this.state.flipped ? " is-flipped" : ""}`}>
             <img 
-              className={`card card-front`} 
+              className="card-face front"
               src={this.props.cover} alt={"front"}/>
             <img 
-              className={`card card-back`} 
+              className="card-face back"
               src={this.props.content} alt={"back"}/>
           </div>
         </div>

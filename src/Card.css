@@ -28,11 +28,19 @@
     transform: rotateY(180deg);
 }
 
-.card-front {
+.card-face {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+
+.front {
     backface-visibility: hidden;
 }
 
-.card-back {
+.back {
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
