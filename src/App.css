@@ -7,26 +7,11 @@ div p {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.image-collection {
+.card-collection {
   display: grid;
   grid-template-columns: 22% 22% 22% 22%;
   grid-gap: 3%;
   margin-left: 3%;
   background-color: #fff;
   color: lightblue;
-}
-
-.item-box {
-  background-color: lightblue;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-
-.cover, .content {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  cursor: pointer;
 }

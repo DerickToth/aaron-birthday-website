@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import { ImageBox } from './ImageBox';
+import { Card } from './Card';
 
-export class ImageCollection extends React.Component {
+export class CardCollection extends React.Component {
     constructor() {
       super()
 
@@ -26,9 +26,9 @@ export class ImageCollection extends React.Component {
   
     render() {
       return (
-        <div className="image-collection">
+        <div className="card-collection">
           {this.state.data.map(item => {
-            return <ImageBox cover={item[0]} content={item[1]}/>
+            return <Card cover={item[0]} content={item[1]}/>
           })}
         </div>
       );

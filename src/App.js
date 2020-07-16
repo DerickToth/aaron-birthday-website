@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { ImageCollection } from './ImageCollection';
+import { CardCollection } from './CardCollection';
 
 class App extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class App extends React.Component {
         <header className="App-header">
           <p>AARON DAY!</p>
         </header>
-        <ImageCollection/>
+        <CardCollection/>
       </div>
     );
   }
