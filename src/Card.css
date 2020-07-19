@@ -1,7 +1,7 @@
 .card-wrapper {
+    position: relative;
     width: 100%;
     height: 250px; 
-    position: relative;
 
     background-color: lightblue;
     color: #fff;
@@ -17,11 +17,22 @@
     display: block;
     cursor: pointer;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 1s, width 1s, height 1s;
 }
 
 .is-flipped {
     transform: rotateY(180deg);
+    background: green;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+.selection {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: green;
 }
 
 .card-face {

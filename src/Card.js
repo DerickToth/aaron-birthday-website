@@ -6,7 +6,7 @@ export class Card extends React.Component {
       super()
 
       this.state = {
-        flipped: false
+        flipped: false,
       }
     }
 
@@ -14,8 +14,8 @@ export class Card extends React.Component {
         e.preventDefault();
         e.stopPropagation();
         this.setState({
-            flipped: this.state.flipped ? false : true
-        })    
+            flipped: !this.state.flipped
+        });
     }
 
     render() {

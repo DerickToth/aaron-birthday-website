@@ -27,8 +27,8 @@ export class CardCollection extends React.Component {
     render() {
       return (
         <div className="card-collection">
-          {this.state.data.map(item => {
-            return <Card cover={item[0]} content={item[1]}/>
+          {this.state.data.map((item, i) => {
+            return <Card key={i} cover={item[0]} content={item[1]}/>
           })}
         </div>
       );
