@@ -7,15 +7,6 @@ div p {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.card-collection {
-  display: grid;
-  grid-template-columns: 22% 22% 22% 22%;
-  grid-gap: 3%;
-  margin-left: 3%;
-  background-color: #fff;
-  color: lightblue;
-}
-
 .mute-icon {
   position: absolute;
   right: 3%;

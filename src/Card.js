@@ -6,7 +6,7 @@ export class Card extends React.Component {
       super()
 
       this.state = {
-        flipped: false,
+        selected: false
       }
     }
 
@@ -20,8 +20,8 @@ export class Card extends React.Component {
 
     render() {
       return (
-        <div className="card-wrapper" onClick={this.flip}>
-          <div className={`card${this.state.flipped ? " is-flipped" : ""}`}>
+        <div className="card-wrapper" onClick={this.props.onClick}>
+          <div className={`card${this.state.selecting ? " is-selected" : ""}`}>
             <img 
               className="card-face front"
               src={this.props.cover} alt={"front"}/>
