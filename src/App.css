@@ -3,8 +3,13 @@
 }
 
 div p {
-  font-size: 2em;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 3em;
+  font-family: "Arial Black", "Arial", sans-serif;
+  color: lightblue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .mute-icon {

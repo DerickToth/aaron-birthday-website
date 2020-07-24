@@ -6,14 +6,15 @@
     left: 0;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
+    cursor: pointer;
 }
 
 .selected-card-wrapper {
     position: fixed;
-    width: 80vw;
-    height: 80vh;
-    top: 10%;
-    left: 10%;
+    width: 85vw;
+    height: 85vh;
+    top: 7.5%;
+    left: 7.5%;
     z-index: 2;
 
     background-color: lightblue;
@@ -21,6 +22,7 @@
     border-radius: 5px;
     font-size: 150%;
     perspective: 600px;
+    cursor: default;
 }
 
 .selected-card { 
@@ -28,7 +30,6 @@
     height: 100%;
     width: 100%;
     display: block;
-    cursor: pointer;
     transform-style: preserve-3d;
     transition: transform 2s;
 }

@@ -1,7 +1,28 @@
 import React from 'react';
 import './CardCollection.css';
 import { SelectedCard } from './SelectedCard';
-// import { Card } from './Card';
+import party from './media/back/Party.jpeg';
+import dad from './media/back/Dad.jpeg';
+import frozen from './media/back/Frozen.jpeg';
+import hot from './media/back/Hot.jpeg';
+import pembroke from './media/back/Pembroke.jpeg';
+import singapore from './media/back/Singapore.jpeg';
+
+import cs from './media/back/CS.jpeg';
+import beer from './media/front/Beer.png';
+import fire from './media/front/Fire.png';
+import grandpa from './media/front/Grandpa.png';
+import nerd from './media/front/Nerd.png';
+import flag from './media/front/Singapore.png';
+import snowman from './media/front/Snowman.png';
+import house from './media/front/House.png';
+// import pepe from './media/front/Pepe.png';
+
+import a from './media/photos/A.png';
+import b from './media/photos/B.jpg';
+import c from './media/photos/C.jpg';
+import d from './media/photos/D.jpg';
+import e from './media/photos/E.jpg';
 
 export class CardCollection extends React.Component {
     constructor() {
@@ -10,18 +31,18 @@ export class CardCollection extends React.Component {
       this.state = {
         selected: -1,
         data: [
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"],
-          ["https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/166f59e9-66e4-4215-bf28-f772832d0922/dccjo0j-142d0303-126b-4f82-87ff-ad06768a764f.png", "https://i.pinimg.com/originals/22/27/c0/2227c0567796bde1273dc37874ebcea2.png"]
+          [beer, party],
+          [a],
+          [grandpa, dad],
+          [b],
+          [c],
+          [flag, singapore],
+          [d],
+          [snowman, frozen],
+          [fire, hot],
+          [e],
+          [house, pembroke],
+          [nerd, cs],
         ],
       }
     }
@@ -44,6 +65,15 @@ export class CardCollection extends React.Component {
       e.stopPropagation();
       this.setState({ selected: i });
       console.log("clicked", i, this.state.selected);
+
+      if (i === 0) {
+        const audio = document.getElementsByClassName("audio-element")[0];
+        audio.play();
+      }
+    }
+
+    unselect = () => {
+      this.setState({ selected: -1 })
     }
   
     render() {
@@ -51,18 +81,22 @@ export class CardCollection extends React.Component {
       return (
         <div className="card-collection" onClick={this.handleOutsideClick}>
           {this.state.data.map((item, i) => {
-            // return <Card key={i} cover={item[0]} content={item[1]} onClick={() => console.log("clicked", i)}/>
+            let flippable = item.length > 1;
             return (
-              <div className="card-wrapper" key={i} onClick={(e) => this.select(e, i)}>
-                {/* <div className={`card${this.state.selected === i ? " is-selected" : ""}`}> */}
-                <div className={`card${this.state.selected === i ? "" : ""}`}>
+              <div className={`card-wrapper${flippable ? " flippable" : ""}`} key={i} onClick={flippable ? (e) => this.select(e, i) : null}>
+                <div className="card">
                   <img className="cover-image" src={item[0]} alt={"cover"}/>
                 </div>
               </div>
           )})}
           {this.state.selected === -1 ? null : 
-            <SelectedCard front={selected[0]} back={selected[1]}/>
+            <SelectedCard front={selected[0]} back={selected[1]} unselect={this.unselect}/>
           }
+          <audio 
+            className="audio-element" 
+            ref={React.createRef()} 
+            src={require("./media/Taylor_Swift_22.mp3")}
+            loop={true}/>
         </div>
       );
     }
